@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+bun.lock
+.runtime/
+test-shell/e2e-evidence/
+
+# Runtime nodes — ignore all except root
+.agsh/tmp/
+.agsh/nodes/*
+!/.agsh/nodes/root/
+
+# Deprecated
+/nodes/
