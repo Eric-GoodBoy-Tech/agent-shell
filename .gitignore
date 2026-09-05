@@ -1,0 +1,29 @@
+node_modules/
+dist/
+.env
+bun.lock
+.runtime/
+test-shell/e2e-evidence/
+
+# Runtime nodes/tmp — never ship (node context may carry conversation content)
+.agsh/
+
+# Deprecated
+/nodes/
+
+# ---- 2026-09-06 泄漏应急加固: 分发仓严禁整树快照携带 ----
+.env*
+*.bak
+.DS_Store
+*.mp4
+*.gif
+recordings
+docs/benchmarks/
+
+# ---- 密钥/凭据类兜底(宁可多忽略,不可漏夹带) ----
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+*.log
